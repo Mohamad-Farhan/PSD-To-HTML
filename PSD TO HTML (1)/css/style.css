@@ -5,6 +5,10 @@
     src: local('HelveticaNeue-Thin.otf'), url('HelveticaNeue-Thin.otf') format('opentype');
 }
 
+* {
+    box-sizing: border-box;
+}
+
 .container {
     max-width: 1100px;
     width: 100%;
@@ -13,4 +17,32 @@
 
 body {
     font-family: 'HelveticaNeue-Thin';
+}
+
+#hero {
+    background-image: url(../img/hero-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h2 {
+    font-size: 52px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.nav li a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 30px;
+    padding-bottom: 3px;
+}
+.nav li a:hover{
+    border-bottom: 4px solid white;
 }
